@@ -1,13 +1,13 @@
 body {
     background-color: black;
   }
-  .container {
+.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
-.text {
+/* .text {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -15,22 +15,30 @@ body {
     align-items: flex-start;
     max-width: 15vw;
     margin: 2.5vw;
-}
+} */
 .image {
     flex: 1;
     display: flex;
     justify-content: flex-end;
     margin: 2.5vw;
+    max-width: 6vw;
+}
+.logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  margin: 2.5vw;
+  max-width: 40vw;
 }
 
 img {
-    max-width: 5vw;
+    max-width: 100%;
     height: auto;
     cursor: pointer;
 }
-  h1 {
+  /* h1 {
     color: #2E55FF;
     justify-self: center;
     font-family: "Copperplate", fantasy, sans-serif;
     font-size: 5vw;
-  }
+  } */
