@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: #131313;
   }
 .container {
     display: flex;
@@ -74,6 +74,7 @@ img {
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 3;
+  cursor: default;
 }
   /* h1 {
     color: #2E55FF;
