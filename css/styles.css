@@ -4,6 +4,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     padding: 20px;
 }
@@ -17,16 +18,10 @@ body {
     margin: 2.5vw;
 } */
 .image {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
     margin: 2.5vw;
     max-width: 6vw;
 }
 .logo {
-  flex: 1;
-  display: flex;
-  justify-content: flex-start;
   margin: 2.5vw;
   max-width: 40vw;
 }
