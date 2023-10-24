@@ -76,6 +76,12 @@ img {
   grid-row-end: 3;
   cursor: default;
 }
+#about {
+  grid-column-start: 9;
+  grid-column-end: 11;
+  grid-row-start: 19;
+  grid-row-end: 21;
+}
   /* h1 {
     color: #2E55FF;
     justify-self: center;
