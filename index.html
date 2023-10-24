@@ -13,7 +13,9 @@
         <div class="logo">
             <img src="images/uttet_logo_2.png" id="logo" alt="UofT Tetris">
         </div>
-        <div class="board">
+        <canvas id="board"></canvas>
+        <button onclick="play()" class="play">PLAY</button>
+        <!-- <div class="board">
             <div class="image" id="O">
                 <img src="images/o_block.jpg" alt="O Block">
             </div>
@@ -193,16 +195,6 @@
             <div class="square"></div>
             <div class="square"></div>
             <div class="square"></div>
-            <!-- <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div>
-            <div class="square"></div> -->
 
             <div class="image" id="discord">
                 <a href="https://discord.gg/ECx66qmUsZ"><img src="images/discord_v2.jpg" alt="Discord"></a>
@@ -219,9 +211,12 @@
             <div class="image" id="about">
                 <a href=""><img src="images/uttet_logo_thumbnail.png" alt="UofT Tetris Logo"></a>
             </div>
-        </div>
+        </div> -->
     </div>
-
+    <script type="text/javascript" src="js/constants.js"></script>
+    <script type="text/javascript" src="js/board.js"></script>
+    <script type="text/javascript" src="js/piece.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
 
 </html>
