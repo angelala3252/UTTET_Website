@@ -1,4 +1,8 @@
 class Board { 
+    ctx;
+    grid;
+    piece;
+
     constructor(ctx) {
       this.ctx = ctx;    
       this.grid = this.getEmptyBoard();
@@ -25,7 +29,22 @@ class Board {
         }
 
         // next draw the O block
-        playBoard.ctx.fillStyle = 'yellow';
-        playBoard.ctx.fillRect(0, 0, 2, 2);
+        this.piece = new OPiece();
+        this.drawPiece(this.piece);
     }
+
+    drawPiece() {
+        this.ctx.fillStyle = 'yellow';
+        this.ctx.fillRect(this.piece.posX, this.piece.posY, this.piece.width, this.piece.height);
+        // this.grid[piece.posX][piece.posY] = 1;
+        // this.grid[piece.posX + 1][0] = 1;
+        // this.grid[piece.posX + 1][piece.posY + 1] = 1;
+        // this.grid[0][piece.posY + 1] = 1;
+    }
+
+    erasePiece() {
+        this.ctx.fillStyle = 'rgb(19, 19, 19)';
+        this.ctx.fillRect(this.piece.posX, this.piece.posY, this.piece.width, this.piece.height);
+    }
+
   }
