@@ -10,6 +10,7 @@ const playBoard = new Board(ctx);
 playBoard.loadAndDraw();
 
 function play() {
+    document.getElementById('play').disabled = true;
     // console.table(playBoard.grid);
     document.addEventListener('keypress', (event) => {
         var code = event.code;

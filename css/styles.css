@@ -18,6 +18,9 @@ body {
   cursor: pointer;
   font-weight: bold;
 }
+#play[disabled] {
+  cursor: not-allowed;
+}
 .square {
   width: 2vw;
   height: 2vw;
